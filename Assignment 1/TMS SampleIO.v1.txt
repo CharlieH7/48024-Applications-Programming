@@ -1,0 +1,311 @@
+Below is a sample I/O trace. Not every conceivable scenario is shown below and you should submit your code to ED to see what specific scenarios are tested. You should also implement your solution in the same order as ED’s test cases so that you can receive incremental feedback and marks as you progress.
+
+
+
+Tuition Management System:
+L- Login
+X- Exit
+Command (L/X): L
+Email: john.smith@uts.com
+Password: super123
+Incorrect faculty details!
+Command (L/X): L
+Email: jane.tyler@uts.com
+Password: super123
+Admin Menu: 
+C- Add Student
+R- View Student
+U- Update Student
+D- Delete Student
+V- View Students
+T- TMS Menu
+X- Logout
+Session Admin: Jane Tyler - Menu Commands (C/R/U/D/V/T/X): X
+
+========================================================================================================
+
+Admin Menu: 
+C- Add Student
+R- View Student
+U- Update Student
+D- Delete Student
+V- View Students
+T- TMS Menu
+X- Logout
+Session Admin: Jane Tyler - Menu Commands (C/R/U/D/V/T/X): C
+Name: Amenda Baker
+Email: amenda.baker@uts.com
+Phone: 77778888
+Address: 3 N Alfred St. Sydney NSW 2000
+ID: 14587903
+Type: Full-time
+Credits: 48
+Scholarship($): 2000
+Deduction Code: none
+Amenda Baker record has been created.
+Session Admin: Jane Tyler - Menu Commands (C/R/U/D/V/T/X): V
++----------------------+---------------------------+------------+------------+
+| Student  Name        | Email                     |  Phone     | Type       |
++----------------------+---------------------------+------------+------------+
+| Thomas Muller        | thomas.muller@uts.com     | 99991111   | Full-Time  |
+| Alice Stefan         | alice.stefan@uts.com      | 88881111   | Part-Time  |
+| Lucy Lu              | lucy.lu@uts.com           | 98981100   | Full-Time  |
+| Andreas Brehme       | andreas.b@uts.com         | 90001222   | Full-Time  |
+| Ruddy Voller         | ruddy.v@uts.com           | 98980000   | Full-Time  |
+| Monica Shwarz        | monica.s@uts.com          | 92241188   | Part-Time  |
+| Amenda Baker         | amenda.baker@uts.com      | 77778888   | Full-time  |
++----------------------+---------------------------+------------+------------+
+Session Admin: Jane Tyler - Menu Commands (C/R/U/D/V/T/X): R
+Name: Amenda Baker
++----------------------+---------------------------+------------+------------+
+| Student Name         | Email                     |  Phone     | Type       |
++----------------------+---------------------------+------------+------------+
+| Amenda Baker         | amenda.baker@uts.com      | 77778888   | Full-time  |
++----------------------+---------------------------+------------+------------+
+Session Admin: Jane Tyler - Menu Commands (C/R/U/D/V/T/X): R
+Name: Amenda
+Amenda record does not exist!
+Session Admin: Jane Tyler - Menu Commands (C/R/U/D/V/T/X): U
+Name: Amenda Baker
+Updating Amenda Baker record: 
+Name: Amenda Baker
+Email: amenda.baker@gmail.com
+Phone: 77778888
+Address: 3 N Alfred St. Sydney NSW 2000
+Type: Part-time
+Credits: 24
+Scholarship($): 0
+Deduction Code: 2022AUT
+Amenda Baker record has been updated.
+Session Admin: Jane Tyler - Menu Commands (C/R/U/D/V/T/X): V
++----------------------+---------------------------+------------+------------+
+| Student  Name        | Email                     |  Phone     | Type       |
++----------------------+---------------------------+------------+------------+
+| Thomas Muller        | thomas.muller@uts.com     | 99991111   | Full-Time  |
+| Alice Stefan         | alice.stefan@uts.com      | 88881111   | Part-Time  |
+| Lucy Lu              | lucy.lu@uts.com           | 98981100   | Full-Time  |
+| Andreas Brehme       | andreas.b@uts.com         | 90001222   | Full-Time  |
+| Ruddy Voller         | ruddy.v@uts.com           | 98980000   | Full-Time  |
+| Monica Shwarz        | monica.s@uts.com          | 92241188   | Part-Time  |
+| Amenda Baker         | amenda.baker@gmail.com    | 77778888   | Part-time  |
++----------------------+---------------------------+------------+------------+
+Session Admin: Jane Tyler - Menu Commands (C/R/U/D/V/T/X): D
+Name: Lucy
+Lucy record does not exist!
+Session Admin: Jane Tyler - Menu Commands (C/R/U/D/V/T/X): D
+Name: Lucy Lu
+Lucy Lu record has been deleted.
+Session Admin: Jane Tyler - Menu Commands (C/R/U/D/V/T/X): T
+TMS Menu: 
+F- Find Tuition Slip
+V- View TMS Report
+A- Archive TMS Report
+R- Retrieve TMS Report
+S- Show TMS Log
+X- Close
+Session Admin: Jane Tyler - Menu Commands (F/V/A/R/S/X): X
+
+===================================================================================================
+
+
+TMS Menu:
+F- Find Tuition Slip
+V- View TMS Report
+A- Archive TMS Report
+R- Retrieve TMS Report
+S- Show TMS Log
+X- Close
+Session Admin: Jane Tyler - Menu Commands (F/V/A/R/S/X): F
+Name: Amenda Baker
+Tuition Slip:
++--------------------+-------------+-------------+-------------+-------------+
+| Student Name       |   Tuition   | Scholarship |     Net     |  Deduction  |
++--------------------+-------------+-------------+-------------+-------------+
+| Amenda Baker       | 12000.00    | 0.00        | 10800.00    | 1200.00     |
++--------------------+-------------+-------------+-------------+-------------+
+Session Admin: Jane Tyler - Menu Commands (F/V/A/R/S/X): V
+TMS Report: 
++--------------------+-------------+-------------+-------------+-------------+
+| Student Name       |   Tuition   | Scholarship |     Net     |  Deduction  |
++--------------------+-------------+-------------+-------------+-------------+
+| Thomas Muller      | 24000.00    | 4000.00     | 20000.00    | 0.00        |
+| Alice Stefan       | 12000.00    | 0.00        | 12000.00    | 0.00        |
+| Lucy Lu            | 24000.00    | 0.00        | 21600.00    | 2400.00     |
+| Andreas Brehme     | 24000.00    | 0.00        | 24000.00    | 0.00        |
+| Ruddy Voller       | 24000.00    | 8000.00     | 16000.00    | 0.00        |
+| Monica Shwarz      | 12000.00    | 0.00        | 10800.00    | 1200.00     |
+| Amenda Baker       | 12000.00    | 0.00        | 10800.00    | 1200.00     |
++--------------------+-------------+-------------+-------------+-------------+
+
++--------------------+-------------+
+| Total Tuition      |  132000.00  |
+| Total Scholarship  |  12000.00   |
+| Total NetFee       |  115200.00  |
+| Total Deduction    |  4800.00    |
+| Total Bas          |  16800.00   |
++--------------------+-------------+
+Session Admin: Jane Tyler - Menu Commands (F/V/A/R/S/X): A
+TMS record is created as:Jane Tyler1
+Session Admin: Jane Tyler - Menu Commands (F/V/A/R/S/X): R
+RecordID: Jane Tyler1
+TMS Report: 
++--------------------+-------------+-------------+-------------+-------------+
+| Student Name       |   Tuition   | Scholarship |     Net     |  Deduction  |
++--------------------+-------------+-------------+-------------+-------------+
+| Thomas Muller      | 24000.00    | 4000.00     | 20000.00    | 0.00        |
+| Alice Stefan       | 12000.00    | 0.00        | 12000.00    | 0.00        |
+| Lucy Lu            | 24000.00    | 0.00        | 21600.00    | 2400.00     |
+| Andreas Brehme     | 24000.00    | 0.00        | 24000.00    | 0.00        |
+| Ruddy Voller       | 24000.00    | 8000.00     | 16000.00    | 0.00        |
+| Monica Shwarz      | 12000.00    | 0.00        | 10800.00    | 1200.00     |
+| Amenda Baker       | 12000.00    | 0.00        | 10800.00    | 1200.00     |
++--------------------+-------------+-------------+-------------+-------------+
+
++--------------------+-------------+
+| Total Tuition      |  132000.00  |
+| Total Scholarship  |  12000.00   |
+| Total NetFee       |  115200.00  |
+| Total Deduction    |  4800.00    |
+| Total Bas          |  16800.00   |
++--------------------+-------------+
+Session Admin: Jane Tyler - Menu Commands (F/V/A/R/S/X): S
+TMS Archive:
++--------------+----------------+
+|  TMS Record  |    RecordID    |
++--------------+----------------+
+| TMS 1        |  Jane Tyler1   |
++--------------+----------------+
+Session Admin: Jane Tyler - Menu Commands (F/V/A/R/S/X): X
+
+Faculty Menu:
+Session Admin: Jane Tyler - Menu Commands (C/R/U/D/V/T/X): H
+Admin Menu: 
+C- Add Student
+R- View Student
+U- Update Student
+D- Delete Student
+V- View Students
+T- TMS Menu
+X- Logout
+Session Admin: Jane Tyler - Menu Commands (C/R/U/D/V/T/X): D
+Name: Amenda Baker
+Amenda Baker record has been deleted.
+Session Admin: Jane Tyler - Menu Commands (C/R/U/D/V/T/X): V
++----------------------+---------------------------+------------+------------+
+| Student  Name        | Email                     |  Phone     | Type       |
++----------------------+---------------------------+------------+------------+
+| Thomas Muller        | thomas.muller@uts.com     | 99991111   | Full-Time  |
+| Alice Stefan         | alice.stefan@uts.com      | 88881111   | Part-Time  |
+| Lucy Lu              | lucy.lu@uts.com           | 98981100   | Full-Time  |
+| Andreas Brehme       | andreas.b@uts.com         | 90001222   | Full-Time  |
+| Ruddy Voller         | ruddy.v@uts.com           | 98980000   | Full-Time  |
+| Monica Shwarz        | monica.s@uts.com          | 92241188   | Part-Time  |
++----------------------+---------------------------+------------+------------+
+Session Admin: Jane Tyler - Menu Commands (C/R/U/D/V/T/X): T
+TMS Menu: 
+F- Find Tuition Slip
+V- View TMS Report
+A- Archive TMS Report
+R- Retrieve TMS Report
+S- Show TMS Log
+X- Close
+Session Admin: Jane Tyler - Menu Commands (F/V/A/R/S/X): F
+Name: Amenda Baker
+Tuition slip does not exist for Amenda Baker!
+Session Admin: Jane Tyler - Menu Commands (F/V/A/R/S/X): V
+TMS Report: 
++--------------------+-------------+-------------+-------------+-------------+
+| Student Name       |   Tuition   | Scholarship |     Net     |  Deduction  |
++--------------------+-------------+-------------+-------------+-------------+
+| Thomas Muller      | 24000.00    | 4000.00     | 20000.00    | 0.00        |
+| Alice Stefan       | 12000.00    | 0.00        | 12000.00    | 0.00        |
+| Lucy Lu            | 24000.00    | 0.00        | 21600.00    | 2400.00     |
+| Andreas Brehme     | 24000.00    | 0.00        | 24000.00    | 0.00        |
+| Ruddy Voller       | 24000.00    | 8000.00     | 16000.00    | 0.00        |
+| Monica Shwarz      | 12000.00    | 0.00        | 10800.00    | 1200.00     |
++--------------------+-------------+-------------+-------------+-------------+
+
++--------------------+-------------+
+| Total Tuition      |  120000.00  |
+| Total Scholarship  |  12000.00   |
+| Total NetFee       |  104400.00  |
+| Total Deduction    |  3600.00    |
+| Total Bas          |  15600.00   |
++--------------------+-------------+
+Session Admin: Jane Tyler - Menu Commands (F/V/A/R/S/X): A
+TMS record is created as:Jane Tyler2
+Session Admin: Jane Tyler - Menu Commands (F/V/A/R/S/X): R
+RecordID: Jane Tyler2
+TMS Report: 
++--------------------+-------------+-------------+-------------+-------------+
+| Student Name       |   Tuition   | Scholarship |     Net     |  Deduction  |
++--------------------+-------------+-------------+-------------+-------------+
+| Thomas Muller      | 24000.00    | 4000.00     | 20000.00    | 0.00        |
+| Alice Stefan       | 12000.00    | 0.00        | 12000.00    | 0.00        |
+| Lucy Lu            | 24000.00    | 0.00        | 21600.00    | 2400.00     |
+| Andreas Brehme     | 24000.00    | 0.00        | 24000.00    | 0.00        |
+| Ruddy Voller       | 24000.00    | 8000.00     | 16000.00    | 0.00        |
+| Monica Shwarz      | 12000.00    | 0.00        | 10800.00    | 1200.00     |
++--------------------+-------------+-------------+-------------+-------------+
+
++--------------------+-------------+
+| Total Tuition      |  120000.00  |
+| Total Scholarship  |  12000.00   |
+| Total NetFee       |  104400.00  |
+| Total Deduction    |  3600.00    |
+| Total Bas          |  15600.00   |
++--------------------+-------------+
+Session Admin: Jane Tyler - Menu Commands (F/V/A/R/S/X): R
+RecordID: Jane Tyler1
+TMS Report: 
++--------------------+-------------+-------------+-------------+-------------+
+| Student Name       |   Tuition   | Scholarship |     Net     |  Deduction  |
++--------------------+-------------+-------------+-------------+-------------+
+| Thomas Muller      | 24000.00    | 4000.00     | 20000.00    | 0.00        |
+| Alice Stefan       | 12000.00    | 0.00        | 12000.00    | 0.00        |
+| Lucy Lu            | 24000.00    | 0.00        | 21600.00    | 2400.00     |
+| Andreas Brehme     | 24000.00    | 0.00        | 24000.00    | 0.00        |
+| Ruddy Voller       | 24000.00    | 8000.00     | 16000.00    | 0.00        |
+| Monica Shwarz      | 12000.00    | 0.00        | 10800.00    | 1200.00     |
+| Amenda Baker       | 12000.00    | 0.00        | 10800.00    | 1200.00     |
++--------------------+-------------+-------------+-------------+-------------+
+
++--------------------+-------------+
+| Total Tuition      |  132000.00  |
+| Total Scholarship  |  12000.00   |
+| Total NetFee       |  115200.00  |
+| Total Deduction    |  4800.00    |
+| Total Bas          |  16800.00   |
++--------------------+-------------+
+Session Admin: Jane Tyler - Menu Commands (F/V/A/R/S/X): S
+TMS Archive:
++--------------+----------------+
+|  TMS Record  |    RecordID    |
++--------------+----------------+
+| TMS 1        |  Jane Tyler1   |
+| TMS 2        |  Jane Tyler2   |
++--------------+----------------+
+Session Admin: Jane Tyler - Menu Commands (F/V/A/R/S/X): A
+TMS record is created as:Jane Tyler3
+Session Admin: Jane Tyler - Menu Commands (F/V/A/R/S/X): S
+TMS Archive:
++--------------+----------------+
+|  TMS Record  |    RecordID    |
++--------------+----------------+
+| TMS 1        |  Jane Tyler1   |
+| TMS 2        |  Jane Tyler3   |
+| TMS 3        |  Jane Tyler3   |
++--------------+----------------+
+Session Admin: Jane Tyler - Menu Commands (F/V/A/R/S/X): R
+RecordID: Jane Tyler2
+No TMS is recorded as: Jane Tyler2
+Session Admin: Jane Tyler - Menu Commands (F/V/A/R/S/X): X
+
+Faculty Menu:
+Session Admin: Jane Tyler - Menu Commands (C/R/U/D/V/T/X): X
+
+TMS Tuition Management System:
+Command (L/X): X
+
+Session Terminated!
+
