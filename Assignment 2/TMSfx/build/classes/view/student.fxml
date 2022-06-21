@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>	
+<?import javafx.scene.layout.VBox?>	
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.GridPane?>	
+<?import javafx.scene.layout.*?>
+
+<VBox fx:controller="controller.StudentController" xmlns:fx="http://javafx.com/fxml/1" styleClass="background" prefHeight="400.0" prefWidth="600.0" spacing="20"  >
+    <padding>
+        <Insets top="10" bottom="10" left="5" right="5" />
+    </padding>
+    <HBox alignment="CENTER" styleClass="header">  
+        <GridPane styleClass="header" alignment="CENTER" vgap="10" >
+            <Label styleClass="label-h2" GridPane.columnIndex="0" GridPane.rowIndex="0" text="Personal Details" />
+            <Label styleClass="label-opac" GridPane.columnIndex="0" GridPane.rowIndex="1" text="Name:"/>
+            <TextField fx:id="name" GridPane.columnIndex="1" GridPane.rowIndex="1"/>  
+            <Label styleClass="label-opac" GridPane.columnIndex="0" GridPane.rowIndex="2" text="Email:"/>
+            <TextField fx:id="email" GridPane.columnIndex="1" GridPane.rowIndex="2"/>  
+            <Label styleClass="label-opac" GridPane.columnIndex="0" GridPane.rowIndex="3" text="Phone:"/>
+            <TextField fx:id="phone" GridPane.columnIndex="1" GridPane.rowIndex="3"/>  
+            <Label styleClass="label-opac" GridPane.columnIndex="0" GridPane.rowIndex="4" text="Address:"/>
+            <TextField fx:id="address" GridPane.columnIndex="1" GridPane.rowIndex="4"/>  
+        </GridPane>
+    </HBox>
+    <Separator/>
+    <HBox alignment="CENTER" styleClass="header">  
+        <GridPane styleClass="header" alignment="CENTER" vgap="10" >
+            <Label styleClass="label-h2" GridPane.columnIndex="0" GridPane.rowIndex="0" text="Tuition Details" />
+            <Label styleClass="label-opac" GridPane.columnIndex="0" GridPane.rowIndex="1" text="Student ID:" />
+            <TextField fx:id="studentID" GridPane.columnIndex="1" GridPane.rowIndex="1"/>  
+            <Label styleClass="label-opac" GridPane.columnIndex="0" GridPane.rowIndex="2" text="Type:" />
+            <TextField fx:id="type" GridPane.columnIndex="1" GridPane.rowIndex="2"/>  
+            <Label styleClass="label-opac" GridPane.columnIndex="0" GridPane.rowIndex="3" text="Credits:" />
+            <TextField fx:id="credits" GridPane.columnIndex="1" GridPane.rowIndex="3"/>  
+            <Label styleClass="label-opac" GridPane.columnIndex="0" GridPane.rowIndex="4" text="Scholarship:" />
+            <TextField fx:id="scholarship" GridPane.columnIndex="1" GridPane.rowIndex="4"/>  
+            <Label styleClass="label-opac" GridPane.columnIndex="0" GridPane.rowIndex="5" text="Deduction:" />
+            <TextField fx:id="deduction" GridPane.columnIndex="1" GridPane.rowIndex="5"/>  
+        </GridPane>
+    </HBox>
+    <HBox spacing="10" alignment="CENTER">
+        <Button onAction="#handleAdd" fx:id="add" styleClass="Button" text="Add"/>
+        <Button onAction="#handleUpdate" fx:id="update" styleClass="Button" text="Update"/>
+        <Button onAction="#handleClose" styleClass="Button" text="Close"/>
+    </HBox>
+<stylesheets>
+    <URL value="@tmsfx.css"/>
+</stylesheets>   
+</VBox>

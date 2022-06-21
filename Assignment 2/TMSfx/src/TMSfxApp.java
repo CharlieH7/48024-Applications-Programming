@@ -1,0 +1,20 @@
+import au.edu.uts.ap.javafx.*;
+import javafx.stage.*;
+import javafx.application.Application;
+import javafx.scene.image.Image;
+import model.*;
+
+public class TMSfxApp extends Application {
+    
+    public static void main(String[] args) {
+        launch(args);
+    }
+    
+    @Override
+    public void start(Stage stage) throws Exception {
+        stage.getIcons().add(new Image("view/book.png"));
+        stage.setX(ViewLoader.X);
+        stage.setY(ViewLoader.Y);
+        ViewLoader.showStage(new Session(), "/view/session.fxml", "TMSFX - Faculty Mode", stage);
+    }
+}

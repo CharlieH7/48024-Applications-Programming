@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.VBox?>	
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+
+<VBox fx:controller="controller.SessionController" styleClass="background" prefHeight="300.0" prefWidth="600.0" spacing="50" 
+      xmlns:fx="http://javafx.com/fxml" >    
+    <VBox styleClass="header" spacing="30">
+        <ImageView>
+            <image>
+                <Image url="@uts.png"/>
+            </image>
+        </ImageView>
+        <Label styleClass="h1" text="Tuition Management System"/> 
+    </VBox>
+    <VBox spacing="20" alignment="BOTTOM_RIGHT">
+        <Button onAction="#handleLogin" styleClass="button" text="Login"/>
+        <Button onAction="#handleExit" styleClass="button" text="Exit"/>
+    </VBox>
+<stylesheets>
+      <URL value="@tmsfx.css"/>
+</stylesheets>
+</VBox>

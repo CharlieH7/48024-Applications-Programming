@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>  
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.*?>	
+
+
+<VBox fx:controller="controller.FacultyController" xmlns:fx="http://javafx.com/fxml/1" alignment="TOP_LEFT"
+      spacing="10" styleClass="background" prefHeight="400.0" prefWidth="600.0">
+    <Label styleClass="label-h2" alignment="TOP_LEFT" text="Filters" />
+    <HBox alignment="CENTER" spacing="10">
+        <Label styleClass="label-opac" text="Name:" />
+        <TextField fx:id="name" promptText="Filter by name" />
+        <Label styleClass="label-opac" text="Email:" />
+        <TextField fx:id="email" promptText="Filter by email"/>
+    </HBox>
+    <Separator/>    
+    <TableView fx:id="studentsTv" items="${controller.faculty.students}">
+         <placeholder>
+            <Label text="Students list is not loaded"/>
+         </placeholder>
+        <columns>
+            <TableColumn minWidth="200" text="Name">
+            <cellValueFactory>
+                <PropertyValueFactory property="name"/>
+            </cellValueFactory>
+            </TableColumn>
+            <TableColumn minWidth="200" text="Email">
+            <cellValueFactory>
+                <PropertyValueFactory property="email"/>
+            </cellValueFactory>
+            </TableColumn>
+            <TableColumn minWidth="200" text="Phone">
+            <cellValueFactory>
+                <PropertyValueFactory property="phone"/>
+            </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+    <Separator/> 
+    <HBox spacing="10">
+        <Button onAction="#handleAdd" text="Add"/>
+        <Button onAction="#handleDelete" fx:id="delete" text="Delete" disable="true"/>
+        <Button onAction="#handleSelect" fx:id="select" text="Select" disable="true"/>
+        <Button onAction="#handleSlip" fx:id="slip" text="SLIP" disable="true"/>
+        <Button onAction="#handleReport" text="Report"/>
+        <Button onAction="#handleClose" text="Close"/>
+    </HBox>
+<stylesheets>
+    <URL value="@tmsfx.css"/>
+</stylesheets>    
+</VBox>
