@@ -5,4 +5,4 @@ Session: Autumn 2022
 
 Subject: 48024 Applications Programming
 
-Final Grade: 
+Final Grade: 82 (Distinction)
