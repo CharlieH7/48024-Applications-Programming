@@ -1,4 +1,4 @@
-#Week 2 Lab
+# Week 2 Lab
 
 <p align="left">
 This lab is all about building a program by connecting patterns together.
