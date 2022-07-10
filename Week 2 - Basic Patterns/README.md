@@ -1,6 +1,5 @@
 # Week 2 Lab
 
-<p align="left">
 This lab is all about building a program by connecting patterns together.
 
 Topic: Basic patterns
@@ -16,4 +15,4 @@ then code them individually.
 Notes:
 Each Lab MUST be completed before the due date, as you will be prevented
 from accessing the next lab until after the lab has been completed.
-</p>
+
