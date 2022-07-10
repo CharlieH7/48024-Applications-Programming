@@ -1,6 +1,5 @@
 # Week 4 Lab
 
-<p align="left">
 Topic: Methods and strings, functions vs procedures, string functions
 
 process: break it down, build it up
@@ -15,5 +14,4 @@ plans for each sub-goal, then code them individually.
   
 Notes:
 Lab assessment 2
-</p>
 
