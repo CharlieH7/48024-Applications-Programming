@@ -1,6 +1,5 @@
 # Week 3 Lab
 
-<p align="left">
 Topic: Basic process, key/framework, incremental goals, code, test and debug
  
 Learning Material:
@@ -22,5 +21,5 @@ The process:
 5. Debug
 
 Note: This lab exercise requires you to do your own testing. Consider the edge and middle cases across all dimensions/axes and write down your test cases. In these exercises, we do NOT require you to test for invalid input. 
-</p>
+
 
