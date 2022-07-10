@@ -1,6 +1,5 @@
 # Week 5 Lab
 
-<p align="left">
 Topic: Classes
   
 Design: encapsulation, push it right, spread plans across classes, hide by default
@@ -17,5 +16,5 @@ solution to the problem individually.
 Notes:
 Lab assessment 3
 Assignment 1 released, worth 35%
-</p>
+
 
