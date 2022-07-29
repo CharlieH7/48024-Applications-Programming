@@ -17,3 +17,13 @@ MVC.
 2. Log in to the TMS system using the credentials stored in TMSfx/src/model/Faculties.java (inside the Faculties() constructor)
 
 3. Read Assignment 2 Specifications TMSfx.pdf on how to use the system
+
+![image](https://user-images.githubusercontent.com/48937488/181810249-c0be09d7-765e-4b8c-b97b-b9f7b26b110f.png)
+
+![image](https://user-images.githubusercontent.com/48937488/181810302-940500c4-3968-4caf-8147-2c7246a63be4.png)
+
+![image](https://user-images.githubusercontent.com/48937488/181810328-b5ef6ad0-7b04-428f-9c6e-98a8231bc5f2.png)
+
+![image](https://user-images.githubusercontent.com/48937488/181810379-49674fa6-25a2-4a2c-b60e-c479af173f10.png)
+TMS Report
+![image](https://user-images.githubusercontent.com/48937488/181810422-3173fbb0-2d10-4f6f-995b-af9ab2fbf9de.png)
