@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<!-- FIX fx:controller to locate the class in the "controller" package: -->
+<VBox fx:controller="controller.StoreController" 
+        xmlns:fx="http://javafx.com/fxml" spacing="10" 
+        >
+
+    <Text styleClass="heading" textAlignment="CENTER" text="Store"/>
+
+    <!-- insert a list view here with width 250 and height 150 -->
+    <ListView fx:id="groupsLv" prefWidth="250" prefHeight="150" items="${controller.store.products}"/>
+    <HBox alignment="center">
+        <Button text="View" onAction="#handleView"/>
+    </HBox>
+    <HBox>
+        <Label text="Cash Register: "/>
+        <Text fx:id="cashTxt" />
+    </HBox>
+    
+    <stylesheets><URL value="@style.css"/></stylesheets>
+    
+</VBox>

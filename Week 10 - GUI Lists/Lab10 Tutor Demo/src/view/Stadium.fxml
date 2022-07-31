@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:controller="controller.StadiumController" 
+		xmlns:fx="http://javafx.com/fxml" alignment="center"
+		>
+
+	<Text styleClass="heading" text="Stadium"/>
+	<!-- <Text text="${'Income: $' + controller.stadium.income}"/> -->
+	<ListView fx:id="groupsLv" prefWidth="200" prefHeight="200" items="${controller.stadium.groups}"/>
+	<HBox alignment="center" spacing="10">
+		<Button fx:id="openBtn" text="Open" onAction="#handleOpen"/>
+	</HBox>
+
+	<stylesheets>
+		<URL value="@styles.css"/>
+	</stylesheets>
+	
+</VBox>
