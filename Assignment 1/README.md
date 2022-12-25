@@ -18,11 +18,17 @@ A class diagram has been drawn to better visualise the design of the system
 <img width="485" alt="image" src="https://user-images.githubusercontent.com/48937488/209455602-8bc56537-2ec9-47e0-8dba-1435a648237c.png">
 
 * Classes - The design consists of 8 classes:
-1. Session
-2. Faculty
-3. Faculties
-4. Student
-5. Students
-6. Slip
-7. TMS
-8. TMSLog
+  1. Session
+  2. Faculty
+  3. Faculties
+  4. Student
+  5. Students
+  6. Slip
+  7. TMS
+  8. TMSLog
+  
+* Fields – All the fields have been clarified in each class and they should not be modified. The fields also have some additional requirements and structures:
+
+Lists all have the abstract type of List<>, but must be instantiated with a concrete type that
+implements the List<> behavior (you can choose either – you may also want to think about why
+you might do things this way).
