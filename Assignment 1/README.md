@@ -29,6 +29,4 @@ A class diagram has been drawn to better visualise the design of the system
   
 * Fields – All the fields have been clarified in each class and they should not be modified. The fields also have some additional requirements and structures:
 
-Lists all have the abstract type of List<>, but must be instantiated with a concrete type that
-implements the List<> behavior (you can choose either – you may also want to think about why
-you might do things this way).
+    Lists all have the abstract type of List<>, but must be instantiated with a concrete type that implements the List<> behavior (you can choose either – you may also want to think about why you might do things this way).
